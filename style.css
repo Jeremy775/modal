@@ -21,10 +21,15 @@ body {
 }
 
 .modal-container {
+    display: none;
     position: fixed;
     top: 0;
     width: 100vw;
     height: 100vw;
+}
+
+.modal-container.active {
+    display: block;
 }
 
 .overlay {
@@ -59,3 +64,9 @@ body {
     background: #ff365e;
     color: #fff;
 }
+
+.modal p {
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
